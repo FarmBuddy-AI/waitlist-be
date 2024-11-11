@@ -7,7 +7,7 @@ const MONGO_PASSWORD = process.env.MONGO_PASSWORD
 
 const connectDB = async () => {
     try {
-        await connect(`mongodb+srv://${MONGO_USERNAME}:${MONGO_PASSWORD}@cluster0.a1uva.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`)
+        await connect(`mongodb+srv://farmbuddyai:gMMPKz02YAEwo4K6@cluster0.a1uva.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`)
         console.log("Conected to mongoDB Cluster successfully...🚀🚀")
     } catch (error) {
         console.error("Failed to connect to MongoDB Cluster...", error)
