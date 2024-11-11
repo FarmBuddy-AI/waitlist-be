@@ -3,7 +3,7 @@ import User from '../models/userModel'
 
 const router: Router = Router();
 
-router.post("/waitlist/submit", async (req: Request, res: Response, next: NextFunction) => {
+router.post("/api/waitlist/submit", async (req: Request, res: Response, next: NextFunction) => {
     try {
         const { name, email } = req.body;
 
