@@ -9,6 +9,10 @@ app.use(express.urlencoded({ extended: true }));
 //Ping the database
 connectDB()
 
+// Home route to display a welcome message
+app.get('/', (req, res) => {
+    res.send('Welcome to the Waitlist API!');
+});
 
 //Every app based route will use the /api endpoint
 app.use("/api", router)
