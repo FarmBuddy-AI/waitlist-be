@@ -1,15 +1,15 @@
 {
     "version": 2,
-    "name": "panelvalidation",
+    "name": "waitlist",
     "builds": [
         {
-            "src": "./src/index.ts",
+            "src": "build/index.js",
             "use": "@vercel/node"
         }
     ],
     "routes": [
         {
-            "src": "/(.*)",
+            "src": "/api/(.*)",
             "dest": "/build/index.js"
         }
     ]
