@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "name": "waitlist",
+    "builds": [
+        {
+            "src": "build/index.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/api/(.*)",
+            "dest": "/build/index.js"
+        }
+    ]
+}
