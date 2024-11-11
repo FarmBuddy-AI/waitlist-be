@@ -3,7 +3,7 @@
     "name": "panelvalidation",
     "builds": [
         {
-            "src": "./build/index.js",
+            "src": "./src/index.ts",
             "use": "@vercel/node"
         }
     ],
