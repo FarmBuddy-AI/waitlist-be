@@ -10,7 +10,7 @@ const connectDB = async () => {
         await connect(`mongodb+srv://${MONGO_USERNAME}:${MONGO_PASSWORD}@cluster0.a1uva.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`)
         console.log("Conected to mongoDB Cluster successfully...🚀🚀")
     } catch (error) {
-        console.error("Failed to connect to MongoDB Cluster...", error)
+        console.log(error)
     }
 }
 
