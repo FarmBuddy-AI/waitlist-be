@@ -11,6 +11,9 @@ connectDB()
 
 
 //Every app based route will use the /api endpoint
+app.get("/api", (req, res) => {
+    res.send("Welcome")
+})
 app.use("/api", router)
 
 const PORT = process.env.PORT;
